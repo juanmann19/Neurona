@@ -1,4 +1,5 @@
 
+////Clase Menu
 package com.universidad.neurona;
 
 import java.awt.Color;
@@ -7,6 +8,11 @@ import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import static org.openjdk.nashorn.internal.objects.NativeMath.round;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
 
 public class Menu extends javax.swing.JFrame {
 	
@@ -24,14 +30,23 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         Tabla_D = new javax.swing.JPanel();
-        BNnetflixT3 = new javax.swing.JLabel();
-        NetflixT1 = new javax.swing.JLabel();
-        ConsolasT1 = new javax.swing.JLabel();
-        BNConsolasT4 = new javax.swing.JLabel();
-        NetflixT2 = new javax.swing.JLabel();
-        BNConsolasT2 = new javax.swing.JLabel();
-        ConsolasT3 = new javax.swing.JLabel();
-        BNnetflixT4 = new javax.swing.JLabel();
+        B_TeoriaT3 = new javax.swing.JLabel();
+        B_TeoriaT3.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\Bteoria.jpeg"));
+        teoriaT1 = new javax.swing.JLabel();
+        teoriaT1.setHorizontalAlignment(SwingConstants.CENTER);
+        teoriaT1.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\teoria.jpeg"));
+        practicaT1 = new javax.swing.JLabel();
+        practicaT1.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\practica.jpg"));
+        B_PracticaT4 = new javax.swing.JLabel();
+        B_PracticaT4.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\Bpractica.jpg"));
+        teoriaT2 = new javax.swing.JLabel();
+        teoriaT2.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\teoria.jpeg"));
+        B_PracticaT2 = new javax.swing.JLabel();
+        B_PracticaT2.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\Bpractica.jpg"));
+        practicaT3 = new javax.swing.JLabel();
+        practicaT3.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\practica.jpg"));
+        B_TeoriaT4 = new javax.swing.JLabel();
+        B_TeoriaT4.setIcon(new ImageIcon("C:\\Users\\Juan Garcia\\eclipse-workspace\\Neurona\\images\\Bteoria.jpeg"));
         T4 = new javax.swing.JTextField();
         T3 = new javax.swing.JTextField();
         T2 = new javax.swing.JTextField();
@@ -58,40 +73,6 @@ public class Menu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Tabla_D.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-		/*
-		 * BNnetflixT3.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/NetflixBN.jpg"))); //
-		 * NOI18N BNnetflixT3.setOpaque(true);
-		 * 
-		 * NetflixT1.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/netflix.jpg"))); //
-		 * NOI18N
-		 * 
-		 * ConsolasT1.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/consolas.png"))); //
-		 * NOI18N
-		 * 
-		 * BNConsolasT4.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/ConsolasBN.png"))); //
-		 * NOI18N
-		 * 
-		 * NetflixT2.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/netflix.jpg"))); //
-		 * NOI18N
-		 * 
-		 * BNConsolasT2.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/ConsolasBN.png"))); //
-		 * NOI18N
-		 * 
-		 * ConsolasT3.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/consolas.png"))); //
-		 * NOI18N
-		 * 
-		 * BNnetflixT4.setIcon(new
-		 * javax.swing.ImageIcon(getClass().getResource("/images/NetflixBN.jpg"))); //
-		 * NOI18N BNnetflixT4.setOpaque(true);
-		 */
 
         T4.setFont(new java.awt.Font("Impact", 1, 48)); // NOI18N
         T4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -130,26 +111,26 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Tabla_DLayout.createSequentialGroup()
-                        .addComponent(NetflixT1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(teoriaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(ConsolasT1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(practicaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(T1, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE))
                     .addGroup(Tabla_DLayout.createSequentialGroup()
                         .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(Tabla_DLayout.createSequentialGroup()
-                                .addComponent(BNnetflixT3, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(B_TeoriaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(ConsolasT3, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(practicaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(Tabla_DLayout.createSequentialGroup()
-                                    .addComponent(BNnetflixT4, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(B_TeoriaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(BNConsolasT4, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(B_PracticaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(Tabla_DLayout.createSequentialGroup()
-                                    .addComponent(NetflixT2, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(teoriaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(BNConsolasT2, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(B_PracticaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(T4)
@@ -162,15 +143,15 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Tabla_DLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NetflixT1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ConsolasT1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(teoriaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(practicaT1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(T1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Tabla_DLayout.createSequentialGroup()
                         .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(NetflixT2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BNConsolasT2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(teoriaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(B_PracticaT2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(Tabla_DLayout.createSequentialGroup()
@@ -179,19 +160,19 @@ public class Menu extends javax.swing.JFrame {
                                 .addComponent(T4, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(Tabla_DLayout.createSequentialGroup()
                                 .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ConsolasT3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BNnetflixT3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(practicaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(B_TeoriaT3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(Tabla_DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(BNnetflixT4, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BNConsolasT4, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(B_TeoriaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(B_PracticaT4, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addComponent(T2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Neurona_D.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         Neurona_D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Neurona_D.setText("NEURONA DE LA DIVERSION");
+        Neurona_D.setText("NEURONA DE BUENAS NOTAS");
 
         Pesos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -209,46 +190,46 @@ public class Menu extends javax.swing.JFrame {
         Titulo1.setText("Pesos");
 
         javax.swing.GroupLayout PesosLayout = new javax.swing.GroupLayout(Pesos);
-        Pesos.setLayout(PesosLayout);
         PesosLayout.setHorizontalGroup(
-            PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PesosLayout.createSequentialGroup()
-                .addGroup(PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PesosLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(LW1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LW2, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(L0i, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addGap(29, 29, 29)
-                        .addGroup(PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Oi, javax.swing.GroupLayout.DEFAULT_SIZE, 265, Short.MAX_VALUE)
-                            .addComponent(W2)
-                            .addComponent(W1)))
-                    .addGroup(PesosLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Titulo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap())
+        	PesosLayout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(PesosLayout.createSequentialGroup()
+        			.addGroup(PesosLayout.createParallelGroup(Alignment.LEADING)
+        				.addGroup(PesosLayout.createSequentialGroup()
+        					.addGap(25)
+        					.addGroup(PesosLayout.createParallelGroup(Alignment.TRAILING)
+        						.addComponent(LW1, Alignment.LEADING)
+        						.addComponent(LW2, Alignment.LEADING)
+        						.addComponent(L0i, Alignment.LEADING))
+        					.addGap(29)
+        					.addGroup(PesosLayout.createParallelGroup(Alignment.LEADING, false)
+        						.addComponent(Oi)
+        						.addComponent(W2)
+        						.addComponent(W1, GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)))
+        				.addGroup(PesosLayout.createSequentialGroup()
+        					.addGap(97)
+        					.addComponent(Titulo1, GroupLayout.PREFERRED_SIZE, 125, GroupLayout.PREFERRED_SIZE)))
+        			.addContainerGap(437, Short.MAX_VALUE))
         );
         PesosLayout.setVerticalGroup(
-            PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PesosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Titulo1)
-                .addGap(13, 13, 13)
-                .addGroup(PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LW1)
-                    .addComponent(W1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LW2)
-                    .addComponent(W2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PesosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(L0i)
-                    .addComponent(Oi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(27, Short.MAX_VALUE))
+        	PesosLayout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(PesosLayout.createSequentialGroup()
+        			.addContainerGap()
+        			.addComponent(Titulo1)
+        			.addGap(13)
+        			.addGroup(PesosLayout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(LW1)
+        				.addComponent(W1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addGap(18)
+        			.addGroup(PesosLayout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(LW2)
+        				.addComponent(W2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addGap(18)
+        			.addGroup(PesosLayout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(L0i)
+        				.addComponent(Oi, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addContainerGap(27, Short.MAX_VALUE))
         );
+        Pesos.setLayout(PesosLayout);
 
         Factor_aprendizaje.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -260,31 +241,30 @@ public class Menu extends javax.swing.JFrame {
         E.setText("E");
 
         javax.swing.GroupLayout Factor_aprendizajeLayout = new javax.swing.GroupLayout(Factor_aprendizaje);
-        Factor_aprendizaje.setLayout(Factor_aprendizajeLayout);
         Factor_aprendizajeLayout.setHorizontalGroup(
-            Factor_aprendizajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Factor_aprendizajeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Factor_aprendizajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Factor_A, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(Factor_aprendizajeLayout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(E)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(FA, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+        	Factor_aprendizajeLayout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(Factor_aprendizajeLayout.createSequentialGroup()
+        			.addContainerGap()
+        			.addComponent(Factor_A)
+        			.addContainerGap(62, Short.MAX_VALUE))
+        		.addGroup(Alignment.TRAILING, Factor_aprendizajeLayout.createSequentialGroup()
+        			.addGap(77)
+        			.addComponent(E)
+        			.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        			.addComponent(FA, GroupLayout.PREFERRED_SIZE, 68, GroupLayout.PREFERRED_SIZE)
+        			.addGap(70))
         );
         Factor_aprendizajeLayout.setVerticalGroup(
-            Factor_aprendizajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Factor_aprendizajeLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(Factor_A)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(Factor_aprendizajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(E)
-                    .addComponent(FA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(33, Short.MAX_VALUE))
+        	Factor_aprendizajeLayout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(Factor_aprendizajeLayout.createSequentialGroup()
+        			.addComponent(Factor_A)
+        			.addGap(63)
+        			.addGroup(Factor_aprendizajeLayout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(E)
+        				.addComponent(FA, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addContainerGap(70, Short.MAX_VALUE))
         );
+        Factor_aprendizaje.setLayout(Factor_aprendizajeLayout);
 
         Salir.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         Salir.setText("Salir");
@@ -298,7 +278,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         Calcular.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        Calcular.setText("Calcular Diversion");
+        Calcular.setText("Calcular calificacion");
         Calcular.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Calcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -335,50 +315,61 @@ public class Menu extends javax.swing.JFrame {
         });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Neurona_D, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Pesos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Factor_aprendizaje, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Salir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Limpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Calcular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnReiniciar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Siguiente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Tabla_D, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+        	layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(layout.createSequentialGroup()
+        			.addGap(125)
+        			.addComponent(Neurona_D, GroupLayout.DEFAULT_SIZE, 812, Short.MAX_VALUE)
+        			.addGap(686))
+        		.addGroup(layout.createSequentialGroup()
+        			.addGroup(layout.createParallelGroup(Alignment.TRAILING, false)
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(53)
+        					.addGroup(layout.createParallelGroup(Alignment.LEADING, false)
+        						.addComponent(Siguiente, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        						.addComponent(Limpiar, GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
+        					.addGap(34)
+        					.addComponent(Tabla_D, 0, 0, Short.MAX_VALUE))
+        				.addGroup(Alignment.LEADING, layout.createSequentialGroup()
+        					.addContainerGap()
+        					.addComponent(Pesos, GroupLayout.PREFERRED_SIZE, 301, GroupLayout.PREFERRED_SIZE)
+        					.addGap(32)
+        					.addComponent(Factor_aprendizaje, GroupLayout.PREFERRED_SIZE, 233, GroupLayout.PREFERRED_SIZE)
+        					.addGap(18)
+        					.addGroup(layout.createParallelGroup(Alignment.LEADING, false)
+        						.addComponent(Salir, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        						.addComponent(btnReiniciar, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        						.addComponent(Calcular, GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE))))
+        			.addContainerGap(602, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Tabla_D, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Salir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Siguiente, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE))
-                .addContainerGap(14, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(Neurona_D)
-                .addGap(18, 18, 18)
-                .addComponent(Pesos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Factor_aprendizaje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Calcular, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Limpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79))
+        	layout.createParallelGroup(Alignment.TRAILING)
+        		.addGroup(layout.createSequentialGroup()
+        			.addContainerGap()
+        			.addComponent(Neurona_D)
+        			.addGap(42)
+        			.addGroup(layout.createParallelGroup(Alignment.LEADING)
+        				.addComponent(Pesos, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        				.addGroup(layout.createSequentialGroup()
+        					.addComponent(Calcular, GroupLayout.PREFERRED_SIZE, 47, GroupLayout.PREFERRED_SIZE)
+        					.addPreferredGap(ComponentPlacement.RELATED)
+        					.addComponent(btnReiniciar, GroupLayout.PREFERRED_SIZE, 47, GroupLayout.PREFERRED_SIZE)
+        					.addPreferredGap(ComponentPlacement.RELATED)
+        					.addComponent(Salir, GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+        					.addPreferredGap(ComponentPlacement.RELATED))
+        				.addComponent(Factor_aprendizaje, GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE))
+        			.addGroup(layout.createParallelGroup(Alignment.LEADING)
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(95)
+        					.addComponent(Siguiente, GroupLayout.PREFERRED_SIZE, 103, GroupLayout.PREFERRED_SIZE)
+        					.addGap(68)
+        					.addComponent(Limpiar, GroupLayout.PREFERRED_SIZE, 66, GroupLayout.PREFERRED_SIZE))
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(18)
+        					.addComponent(Tabla_D, GroupLayout.PREFERRED_SIZE, 606, GroupLayout.PREFERRED_SIZE)))
+        			.addGap(25))
         );
+        getContentPane().setLayout(layout);
 
         pack();
     }// </editor-fold>                        
@@ -387,7 +378,7 @@ public class Menu extends javax.swing.JFrame {
         dispose();
     }                                     
 
-    
+    //////////////////////////////////////////////////////////////////////////////////////////////////
     double y1 = 0;
     double y2 = 0;
     double y3 = 0;
@@ -398,10 +389,10 @@ public class Menu extends javax.swing.JFrame {
     int[] n3 = {-1,1,-1};
     int[] n4 = {-1,-1,-1};
     
-    double ccW1 = 0;
-    double ccW2 = 0;
-    double ccOi = 0;
-    double ccFA = 0;
+    double ccW1 = 0; //peso 1
+    double ccW2 = 0; //peso 2
+    double ccOi = 0; //Valor de comparacion
+    double ccFA = 0; //factor de aprendizaje
     
     int complete = 0;
     
@@ -480,7 +471,7 @@ public class Menu extends javax.swing.JFrame {
             evaluaprima();
         }
     }                                        
-    
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void nuevospesos(double n0, double n1, double n2, double n3){        
         
         DecimalFormat df = new DecimalFormat("#.##");
@@ -559,7 +550,11 @@ public class Menu extends javax.swing.JFrame {
         }
         
         if (complete == 0){
-            JOptionPane.showMessageDialog(null, "Diversion calculada correctamente...!!!", "Mensaje", JOptionPane.WARNING_MESSAGE);
+        	String resultado = String.format("El valor del primer peso es: %s, \n"
+        			+ "El valor del segundo peso es: %s\n"
+        			+ "El valor del limite es: %s\n",String.valueOf(ccW1),String.valueOf(ccW2),String.valueOf(ccOi));
+        	JOptionPane.showMessageDialog(null, resultado, "Mensaje", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Buena calificacion calcula da correctamente...!!!", "Mensaje", JOptionPane.WARNING_MESSAGE);
             reiniciar();
         }        
        
@@ -568,7 +563,8 @@ public class Menu extends javax.swing.JFrame {
     private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {                                          
         calculos();
         validar();
-    }                                         
+    }      
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public void reiniciar(){
         
@@ -601,7 +597,7 @@ public class Menu extends javax.swing.JFrame {
         Oi.setEnabled(true);
         FA.setEnabled(true);
         
-        T1.setBackground(Color.white);
+        T1.setBackground(Color.white);//resultados de iteracion
         T2.setBackground(Color.white);
         T3.setBackground(Color.white);
         T4.setBackground(Color.white);        
@@ -623,13 +619,13 @@ public class Menu extends javax.swing.JFrame {
     }
     
  // Variables declaration - do not modify                     
-    private javax.swing.JLabel BNConsolasT2;
-    private javax.swing.JLabel BNConsolasT4;
-    private javax.swing.JLabel BNnetflixT3;
-    private javax.swing.JLabel BNnetflixT4;
+    private javax.swing.JLabel B_PracticaT2;
+    private javax.swing.JLabel B_PracticaT4;
+    private javax.swing.JLabel B_TeoriaT3;
+    private javax.swing.JLabel B_TeoriaT4;
     private javax.swing.JButton Calcular;
-    private javax.swing.JLabel ConsolasT1;
-    private javax.swing.JLabel ConsolasT3;
+    private javax.swing.JLabel practicaT1;
+    private javax.swing.JLabel practicaT3;
     private javax.swing.JLabel E;
     private javax.swing.JTextField FA;
     private javax.swing.JLabel Factor_A;
@@ -638,8 +634,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LW1;
     private javax.swing.JLabel LW2;
     private javax.swing.JButton Limpiar;
-    private javax.swing.JLabel NetflixT1;
-    private javax.swing.JLabel NetflixT2;
+    private javax.swing.JLabel teoriaT1;
+    private javax.swing.JLabel teoriaT2;
     private javax.swing.JLabel Neurona_D;
     private javax.swing.JTextField Oi;
     private javax.swing.JPanel Pesos;
